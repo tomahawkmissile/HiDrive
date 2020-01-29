@@ -4,12 +4,10 @@ High power smart DC/DC switching converter
 **Note: this is a conceptual project in its alpha stages.**
 
 Planned features:
-- Wide VIN (TBD)
-- Buck-boost topology with configurable output voltage (output TBD)
-- Max current (TBD)
+- Wide VIN (4.5-80VDC)
+- Buck-boost topology with configurable output voltage (80V MAX on HV-side, 65V MAX on LV-side)
+- Max current (50A)
 - Full telemetry of voltages, currents, temperatures, and overall system health
-- UVLO
-- Overvoltage Shutoff
+- UVLO/OVLO
 - Reverse polarity protection and indicator
-- Integrated microcontroller with external bus support (CAN)
-- Integrated TFT display
+- I2C external control (I2C mux required for multiple HiDrive's due to address conflicts)
